@@ -1,0 +1,45 @@
+body {
+    background-color: #000000;
+}
+
+.main-container {
+    border: 2px solid #ffffff;
+}
+
+.top-bar {
+    display: flex;
+    width: 100%;
+}
+
+.lines {
+    width: 100%;
+}
+
+.line {
+    margin: 8px;
+    border: 1px solid #ffffff;
+}
+
+.square {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #ffffff;
+    margin: 12px;
+}
+
+.bar-bottom {
+    border: 1px solid #ffffff;
+}
+
+.panel {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.card-1 {
+    grid-column: 1 / -1;
+}
+
+img {
+    width: 450px;
+}
