@@ -110,6 +110,7 @@ img {
     border: 3px solid #ffffff;
     border-radius: 100px;
     transition: all 0.1s ease 0s;
+    animation: wiggle 1.4s linear 0s infinite normal none;
 }
 
 .card-1:hover {
@@ -219,4 +220,10 @@ img {
     .right-gifs {
         display: none;
     }
+}
+
+@keyframes wiggle {
+    0%, 10%, 20%, 30%, 40% { transform: rotate(0deg) }
+    5%, 25% { transform: rotate(2deg) }
+    15%, 35% { transform: rotate(-2deg) }
 }
