@@ -1,4 +1,5 @@
 body {
+    cursor: url(images/knife.cur), auto;
     background-color: #000000;
     color: #ffffff;
     font-size: 32px;
@@ -74,7 +75,7 @@ body {
     grid-row: 3 / 4;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
     height: 80vh;
     column-gap: 15px;
     row-gap: 30px;
@@ -110,7 +111,6 @@ img {
     border: 3px solid #ffffff;
     border-radius: 100px;
     transition: all 0.1s ease 0s;
-    animation: wiggle 1.4s linear 0s infinite normal none;
 }
 
 .card-1:hover {
@@ -172,6 +172,23 @@ img {
     color: #000000;
 }
 
+.card-5 {
+    grid-column: 1 / -1;
+    grid-row: 6 / 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    align-self: center;
+    border: 3px solid #ffffff;
+    border-radius: 100px;
+    transition: all 0.1s ease 0s;
+}
+
+.card-5:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
 
 @media only screen and (min-width: 930px) {
 
@@ -205,6 +222,13 @@ img {
     }
 
     .card-4 {
+        width: 800px;
+        justify-self: center;
+        height: 80%;
+        font-size: 48px;
+    }
+
+    .card-5 {
         width: 800px;
         justify-self: center;
         height: 80%;
