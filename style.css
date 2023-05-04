@@ -143,7 +143,17 @@ img {
     border-radius: 100px;
     transition: all 0.2s ease 0s;
     fill: #fff;
-    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.link-2::before {
+    content: url(./images/spiral-path.svg);
+    position: absolute;
+    z-index: -1;
+    animation: hypno 60s linear 0s infinite forwards, pulse 1.8s ease-out infinite;
+
 }
 
 .link-2:hover {
@@ -284,3 +294,12 @@ svg {
     75% { transform: rotate(270deg) }
     100% { transform: rotate(360deg) }
 }
+
+@keyframes pulse {
+    0% { opacity: 0.8 }
+    33% { opacity: 1 }
+    50% { opacity: 0.8 }
+    66% { opacity: 1 }
+    100% { opacity: 0.8 }
+}
+
