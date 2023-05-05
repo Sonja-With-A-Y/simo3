@@ -25,6 +25,7 @@ body {
     width: 100% - 2vh;
     height: 5vh;
     padding: 0px 1vh;
+    border-bottom: 2px solid #fff;
 }
 
 .lines {
@@ -118,11 +119,15 @@ img {
 }
 
 .link-1::before {
+    content: url(./images/paypal.svg);
+    width: 2.5rem;
+}
+
+.link-1::after {
     content: url(./images/spiral-path.svg);
     position: absolute;
     z-index: -1;
-    animation: hypno 60s linear 0s infinite forwards;
-
+    animation: hypno 60s linear 0s infinite forwards, pulse 1.8s ease-out infinite;
 }
 
 .link-1:hover {
@@ -149,11 +154,8 @@ img {
 }
 
 .link-2::before {
-    content: url(./images/spiral-path.svg);
-    position: absolute;
-    z-index: -1;
-    animation: hypno 60s linear 0s infinite forwards, pulse 1.8s ease-out infinite;
-
+    content: url(./images/onlyfans.svg);
+    width: 2.5rem;
 }
 
 .link-2:hover {
@@ -173,6 +175,11 @@ img {
     border-radius: 100px;
     transition: all 0.15s ease 0s;
     fill: #fff;
+}
+
+.link-3::before {
+    content: url(./images/reddit.svg);
+    width: 2.5rem;
 }
 
 .link-3:hover {
@@ -195,6 +202,11 @@ img {
     fill: #fff;
 }
 
+.link-4::before {
+    content: url(./images/twitter.svg);
+    width: 2.5rem;
+}
+
 .link-4:hover {
     background-color: #fff;
     color: #000;
@@ -213,6 +225,11 @@ img {
     border-radius: 100px;
     transition: all 0.15s ease 0s;
     fill: #fff;
+}
+
+.link-5::before {
+    content: url(./images/present.svg);
+    width: 2.5rem;
 }
 
 .link-5:hover {
