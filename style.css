@@ -6,9 +6,8 @@ body {
 }
 
 .modal {
-    width: 80%;
-    max-width: 700px;
-    max-height: 300px;
+    width: 70%;
+    height: 60%;
     color: hsl(0 0% 100%);
     background-color: hsl(0 0% 0%);
     padding: 0px;
@@ -83,6 +82,7 @@ dialog img {
     margin-bottom: 0px;
     justify-content: space-between;
     align-items: end;
+    margin-bottom: 0px;
 }
 
 .tombstone {
@@ -205,6 +205,7 @@ dialog img {
 .link-1::before {
     content: url(./images/paypal.svg);
     width: 2.5rem;
+    margin-right: 5px;
 }
 
 .link-1::after {
@@ -240,6 +241,7 @@ dialog img {
 .link-2::before {
     content: url(./images/onlyfans.svg);
     width: 2.5rem;
+    margin-right: 5px;
 }
 
 .link-2:hover {
@@ -264,6 +266,7 @@ dialog img {
 .link-3::before {
     content: url(./images/reddit.svg);
     width: 2.5rem;
+    margin-right: 5px;
 }
 
 .link-3:hover {
@@ -289,6 +292,7 @@ dialog img {
 .link-4::before {
     content: url(./images/twitter.svg);
     width: 2.5rem;
+    margin-right: 5px;
 }
 
 .link-4:hover {
@@ -314,6 +318,7 @@ dialog img {
 .link-5::before {
     content: url(./images/present.svg);
     width: 2.5rem;
+    margin-right: 5px;
 }
 
 .link-5:hover {
