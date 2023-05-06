@@ -6,8 +6,9 @@ body {
 }
 
 .modal {
-    width: 500px;
-    height: 300px;
+    width: 80%;
+    max-width: 500px;
+    max-height: 300px;
     color: hsl(0 0% 100%);
     background-color: hsl(0 0% 0%);
     padding: 0px;
