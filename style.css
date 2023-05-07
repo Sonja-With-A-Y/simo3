@@ -24,10 +24,6 @@ body {
     margin: 0px;
 }
 
-dialog::backdrop {
-    backdrop-filter: blur(10px) opacity(1);
-}
-
 .dialog-buttons {
     display: flex;
     justify-content: space-evenly;
@@ -66,6 +62,10 @@ dialog img {
 
 .smoke {
     animation: smoke 2s linear forwards;
+}
+
+.blur {
+    filter: blur(10px);
 }
 
 .unblur {
@@ -420,10 +420,10 @@ svg {
 
 @keyframes unblur {
     0% {
-        backdrop-filter: blur(10px) opacity(1);
+        filter: blur(10px);
     }
     to {
-        backdrop-filter: blur(10px) opacity(0);
+        filter: blur(0px);
     }
 }
 

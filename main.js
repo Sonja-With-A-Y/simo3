@@ -4,9 +4,12 @@ const modal = document.querySelector("[data-modal]")
 
 modal.showModal()
 const smokeyElements = document.querySelectorAll("li");
-const unblurElements = document.querySelectorAll("dialog::backdrop");
+const blurElements = document.querySelectorAll("body");
 const fadeElements = document.querySelectorAll("dialog");
 
+blurElements.forEach((elem) => {
+    elem.classList.add('blur');
+});
 
 yesButton.addEventListener("click", () => {
 
@@ -14,7 +17,7 @@ yesButton.addEventListener("click", () => {
         elem.classList.add('smoke');
     })
 
-    unblurElements.forEach((elem) => {
+    blurElements.forEach((elem) => {
         elem.classList.add('unblur');
     })
 
