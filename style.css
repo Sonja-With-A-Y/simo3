@@ -11,41 +11,74 @@ body {
     color: hsl(0 0% 100%);
     background-color: hsl(0 0% 0%);
     padding: 0px;
+    border-radius: 10px;
+    box-shadow: 6px 6px hsl(0deg 0% 50%);
     overflow: hidden;
+}
+
+dialog::backdrop {
+    background-color: hsla(0, 0%, 0%, .0);
 }
 
 .dialog-panel {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     height: 100%;
-    padding: 0px 10px;
+    padding: 0px;
     margin: 0px;
 }
 
+dialog .top-bar {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 100% - 2vh;
+    height: 5vh;
+}
+
+dialog .dialog-text {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 24px;
+    justify-content: center;
+}
+
 .dialog-buttons {
+    flex-grow: 1;
+    align-self: stretch;
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
+    align-items: center;
     margin: 0px;
 }
 
 .dialog-buttons button {
-    font-size: 25px;
+    cursor: url(images/knife.cur), auto;
+    font-size: 32px;
     margin: 0px 15px;
     color: hsl(0 0% 100%);
     background-color: hsl(0 0% 0%);
-    border: 1px solid hsl(0 0% 100%);
+    border: 2px solid hsl(0 0% 100%);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.dialog-buttons button:hover {
+    box-shadow: 0px 0px 5px inset, 0px 0px 15px;
+    background-color: transparent;
 }
 
 .dialog-buttons button:focus {
-    border: 0px solid hsl(0 0% 100%);
+    outline: none;
 }
 
 dialog img {
-    width: 100%;
+    width: 90%;
+    height: 100%;
     margin: 0px;
+    padding: 0px;
 }
 
 .modal ul {
@@ -77,16 +110,17 @@ dialog img {
 }
 
 .tombstones {
-    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
     padding: 0px;
     margin-bottom: 0px;
-    justify-content: space-between;
-    align-items: end;
-    margin-bottom: 0px;
+    border: 0px solid #f00;
 }
 
-.tombstone {
-    margin: 0px 5px;
+dialog li {
+    margin: 0px;
+    padding: 0px;
 }
 
 .main-container {
@@ -331,6 +365,10 @@ svg {
 
     .main-container {
     grid-template-columns: 1fr 830px 1fr;
+    }
+
+    dialog .dialog-text {
+        font-size: 32px;
     }
 
     .panel {
