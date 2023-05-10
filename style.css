@@ -5,6 +5,26 @@ body {
     font-size: 32px;
 }
 
+.bat-container {
+    animation: fly-path 10s linear 0s infinite forwards;
+}
+    
+
+.bat {
+    position: fixed;
+    background-image: url('./images/bat-right.svg');
+    background-size: auto 100%;
+    width: 120px;
+    height: 120px;
+    will-change: background-position;
+    z-index: 2;
+    animation-name: fly-cycle;
+    animation-timing-function: steps(4);
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: -0.5s;
+}
+
 .modal {
     width: 70%;
     height: 60%;
@@ -489,6 +509,33 @@ svg {
       filter: blur(20px);
       opacity: 0;
   }
+}
+
+@keyframes fly-cycle {
+    100% {
+        background-position: -480px 0;
+    }
+}
+
+@keyframes fly-path {
+    0% { transform: translate(-500px, 0px) }
+    5% { transform: translate(-375px, 10px) }
+    10% { transform: translate(-250px, 0px) }
+    15% { transform: translate(-125px, -10px) }
+    20% { transform: translate(0px, 0px) }
+    25% { transform: translate(125px, 10px) }
+    30% { transform: translate(250px, 0px) }
+    35% { transform: translate(375px, -10px) }
+    40% { transform: translate(500px, 0px) }
+    45% { transform: translate(625px, 10px) }
+    50% { transform: translate(750px, 0px) }
+    55% { transform: translate(875px, -10px) }
+    60% { transform: translate(1000px, 0px) }
+    80% { transform: translate(1500px, 0px) }
+    85% { transform: translate(1625px, 10px) }
+    90% { transform: translate(1750px, 0px) }
+    95% { transform: translate(1875px, -10px) }
+    100% { transform: translate(2000px, 0px) }
 }
 
 .modal ul li:nth-child(1){
