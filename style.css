@@ -255,6 +255,7 @@ dialog li {
     position: relative;
     overflow: hidden;
     z-index: 0;
+    min-height: 32px;
 }
 
 .link-1::before {
@@ -287,9 +288,6 @@ dialog li {
     border-radius: 100px;
     transition: all 0.2s ease 0s;
     fill: #fff;
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
 }
 
 .link-2::before {
