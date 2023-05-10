@@ -3,6 +3,7 @@ body {
     background-color: hsl(0deg 0% 0%);
     color: #fff;
     font-size: 32px;
+    overflow: hidden;
 }
 
 .bat-container {
