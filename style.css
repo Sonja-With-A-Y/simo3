@@ -88,7 +88,9 @@ dialog .dialog-text {
 }
 
 .dialog-buttons button:hover {
-    box-shadow: 0px 0px 5px inset, 0px 0px 15px;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 3px 2px hsl(220, 100%, 50%) inset,
+    0px 0px 8px 2px hsl(220, 100%, 50%);
     background-color: transparent;
 }
 
@@ -271,11 +273,6 @@ dialog .dialog-text {
     animation: hypno 60s linear 0s infinite forwards, pulse 1.8s ease-out infinite;
 }
 
-.link-1:hover {
-    box-shadow: 0px 0px 5px inset, 0px 0px 15px;
-    background-color: transparent;
-}
-
 .link-2 {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
@@ -294,11 +291,6 @@ dialog .dialog-text {
     content: url(./images/onlyfans.svg);
     width: 2.5rem;
     margin-right: 5px;
-}
-
-.link-2:hover {
-    box-shadow: 0px 0px 5px inset, 0px 0px 15px;
-    background-color: transparent;
 }
 
 .link-3 {
@@ -321,11 +313,6 @@ dialog .dialog-text {
     margin-right: 5px;
 }
 
-.link-3:hover {
-    box-shadow: 0px 0px 5px inset, 0px 0px 15px;
-    background-color: transparent;
-}
-
 .link-4 {
     grid-column: 1 / -1;
     grid-row: 5 / 6;
@@ -344,11 +331,6 @@ dialog .dialog-text {
     content: url(./images/twitter.svg);
     width: 2.5rem;
     margin-right: 5px;
-}
-
-.link-4:hover {
-    box-shadow: 0px 0px 5px inset, 0px 0px 15px;
-    background-color: transparent;
 }
 
 .link-5 {
@@ -371,8 +353,15 @@ dialog .dialog-text {
     margin-right: 5px;
 }
 
+.link-1:hover, .link-2:hover, .link-3:hover, .link-4:hover    {
+    box-shadow: 0px 0px 3px 2px hsl(200, 100%, 50%) inset,
+    0px 0px 8px 3px hsl(200, 100%, 50%);
+    background-color: transparent;
+}
+
 .link-5:hover {
-    box-shadow: 0px 0px 5px inset, 0px 0px 15px;
+    box-shadow: 0px 0px 3px 2px hsl(200, 100%, 50%) inset,
+    0px 0px 8px 3px hsl(200, 100%, 50%);
     background-color: transparent;
 }
 
