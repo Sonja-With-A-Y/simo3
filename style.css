@@ -249,6 +249,7 @@ a {
 }
 
 .link-1 {
+    cursor: url(images/knife.cur), auto;
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     display: flex;
@@ -268,8 +269,8 @@ a {
 
 .link-1::before {
     content: url(./images/paypal.svg);
-    width: 2.5rem;
-    margin-right: 5px;
+    width: 2.2rem;
+    margin-right: 10px;
 }
 
 .link-1::after {
@@ -280,6 +281,7 @@ a {
 }
 
 .link-2 {
+    cursor: url(images/knife.cur), auto;
     grid-column: 1 / -1;
     grid-row: 3 / 4;
     display: flex;
@@ -295,11 +297,12 @@ a {
 
 .link-2::before {
     content: url(./images/onlyfans.svg);
-    width: 2.5rem;
-    margin-right: 5px;
+    width: 2.2rem;
+    margin-right: 10px;
 }
 
 .link-3 {
+    cursor: url(images/knife.cur), auto;
     grid-column: 1 / -1;
     grid-row: 4 / 5;
     display: flex;
@@ -315,11 +318,12 @@ a {
 
 .link-3::before {
     content: url(./images/reddit.svg);
-    width: 2.5rem;
-    margin-right: 5px;
+    width: 2.2rem;
+    margin-right: 10px;
 }
 
 .link-4 {
+    cursor: url(images/knife.cur), auto;
     grid-column: 1 / -1;
     grid-row: 5 / 6;
     display: flex;
@@ -335,11 +339,12 @@ a {
 
 .link-4::before {
     content: url(./images/twitter.svg);
-    width: 2.5rem;
-    margin-right: 5px;
+    width: 2.2rem;
+    margin-right: 10px;
 }
 
 .link-5 {
+    cursor: url(images/knife.cur), auto;
     grid-column: 1 / -1;
     grid-row: 6 / 7;
     display: flex;
@@ -355,8 +360,8 @@ a {
 
 .link-5::before {
     content: url(./images/present.svg);
-    width: 2.5rem;
-    margin-right: 5px;
+    width: 2.2rem;
+    margin-right: 10px;
 }
 
 .link-1:hover, .link-2:hover, .link-3:hover, .link-4:hover    {
