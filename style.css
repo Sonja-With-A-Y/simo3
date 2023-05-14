@@ -231,6 +231,7 @@ dialog .dialog-text {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10%;
 }
 
 .seraph {
@@ -240,6 +241,11 @@ dialog .dialog-text {
 
 .left-gifs img, .right-gifs img {
     max-width: 200px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .link-1 {
