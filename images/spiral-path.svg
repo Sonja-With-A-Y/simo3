@@ -3,7 +3,7 @@
               "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="800px" height="800px"
+     width="1200px" height="1200px"
      viewBox="0 0 4000 4000">
   <path id="Imported Path"
         fill="#888" stroke="#888" stroke-width="2"
