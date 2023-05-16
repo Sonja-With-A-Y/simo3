@@ -386,10 +386,10 @@ a {
     width: 100%;
 }
 
-.button-5::before {
-    content: url(./images/present.svg);
-    width: 2.2rem;
+.flashing-heart {
+    width: 2.5rem;
     margin-right: 10px;
+
 }
 
 .button-1:hover, .button-2:hover, .button-3:hover, .button-4:hover    {
