@@ -6,24 +6,46 @@ body {
     overflow: hidden;
 }
 
-.bat-container {
+.bat-container-1 {
     position: absolute;
     animation: fly-path 10s linear 0s infinite forwards;
 }
 
-.bat {
+.bat-container-2 {
+    position: absolute;
+    animation: fly-path 10s linear 0s infinite reverse;
+}
+
+.bat-1 {
+    top: 500px;
     position: fixed;
-    background-image: url('./images/bat-right.svg');
     background-size: auto 100%;
     width: 120px;
     height: 120px;
     will-change: background-position;
     z-index: 2;
+    background-image: url('./images/bat-right.svg');
     animation-name: fly-cycle;
     animation-timing-function: steps(4);
     animation-iteration-count: infinite;
     animation-duration: 2s;
     animation-delay: -0.5s;
+}
+
+.bat-2 {
+    position: fixed;
+    background-size: auto 100%;
+    width: 120px;
+    height: 120px;
+    will-change: background-position;
+    z-index: 2;
+    background-image: url('./images/bat-right.svg');
+    animation-name: fly-cycle;
+    animation-timing-function: steps(4);
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: -0.5s;
+    animation-direction: reverse;
 }
 
 .modal {
