@@ -46,6 +46,8 @@ body {
     animation-duration: 2s;
     animation-delay: -0.5s;
     animation-direction: reverse;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 .modal {
