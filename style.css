@@ -9,12 +9,21 @@ body {
 .bat-container-1 {
     position: absolute;
     animation: fly-path 10s linear 0s infinite forwards;
+    z-index: 1;
 }
 
 .bat-container-2 {
     position: absolute;
     animation: fly-path 10s linear 0s infinite reverse;
+    z-index: 1;
 }
+
+.bat-container-3 {
+    position: absolute;
+    animation: fly-path 10s linear 0s infinite forwards;
+    z-index: 1;
+}
+
 
 .bat-1 {
     top: 500px;
@@ -48,6 +57,22 @@ body {
     animation-direction: reverse;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+}
+
+.bat-3 {
+    top: 300px;
+    position: fixed;
+    background-size: auto 100%;
+    width: 120px;
+    height: 120px;
+    will-change: background-position;
+    z-index: 2;
+    background-image: url('./images/bat-right.svg');
+    animation-name: fly-cycle;
+    animation-timing-function: steps(4);
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: -0.5s;
 }
 
 .modal {
