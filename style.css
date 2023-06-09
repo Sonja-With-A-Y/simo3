@@ -14,19 +14,18 @@ body {
 
 .bat-container-2 {
     position: absolute;
-    animation: fly-path 10s linear 0s infinite reverse;
+    animation: fly-path 9s linear 0s infinite reverse;
     z-index: 1;
 }
 
 .bat-container-3 {
     position: absolute;
-    animation: fly-path 10s linear 0s infinite forwards;
+    animation: fly-path 13s linear 2s infinite forwards;
     z-index: 1;
 }
 
 
 .bat-1 {
-    top: 500px;
     position: fixed;
     background-size: auto 100%;
     width: 120px;
@@ -42,6 +41,7 @@ body {
 }
 
 .bat-2 {
+    top: 160px;
     position: fixed;
     background-size: auto 100%;
     width: 120px;
@@ -60,7 +60,7 @@ body {
 }
 
 .bat-3 {
-    top: 300px;
+    top: 90px;
     position: fixed;
     background-size: auto 100%;
     width: 120px;
