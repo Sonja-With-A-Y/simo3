@@ -7,23 +7,22 @@ body {
 }
 
 .bat-container-1 {
-    position: absolute;
-    animation: fly-path 10s linear 0s infinite forwards;
+    position: fixed;
+    animation: fly-path 5s linear 0s infinite forwards;
     z-index: 1;
 }
 
 .bat-container-2 {
-    position: absolute;
-    animation: fly-path 9s linear 0s infinite reverse;
+    position: fixed;
+    animation: fly-path 4s linear 0s infinite reverse;
     z-index: 1;
 }
 
 .bat-container-3 {
-    position: absolute;
-    animation: fly-path 13s linear 2s infinite forwards;
+    position: fixed;
+    animation: fly-path 6s linear 2s infinite forwards;
     z-index: 1;
 }
-
 
 .bat-1 {
     position: fixed;
@@ -558,24 +557,24 @@ svg {
 }
 
 @keyframes fly-path {
-    0% { transform: translate(-500px, 0px) }
-    5% { transform: translate(-375px, 10px) }
-    10% { transform: translate(-250px, 0px) }
-    15% { transform: translate(-125px, -10px) }
-    20% { transform: translate(0px, 0px) }
-    25% { transform: translate(125px, 10px) }
-    30% { transform: translate(250px, 0px) }
-    35% { transform: translate(375px, -10px) }
-    40% { transform: translate(500px, 0px) }
-    45% { transform: translate(625px, 10px) }
-    50% { transform: translate(750px, 0px) }
-    55% { transform: translate(875px, -10px) }
-    60% { transform: translate(1000px, 0px) }
-    80% { transform: translate(1500px, 0px) }
-    85% { transform: translate(1625px, 10px) }
-    90% { transform: translate(1750px, 0px) }
-    95% { transform: translate(1875px, -10px) }
-    100% { transform: translate(2000px, 0px) }
+    0% { transform: translate(0vw, 0px) }
+    5% { transform: translate(5vw, 10px) }
+    10% { transform: translate(10vw, 0px) }
+    15% { transform: translate(15vw, -10px) }
+    20% { transform: translate(20vw, 0px) }
+    25% { transform: translate(25vw, 10px) }
+    30% { transform: translate(30vw, 0px) }
+    35% { transform: translate(35vw, -10px) }
+    40% { transform: translate(40vw, 0px) }
+    45% { transform: translate(45vw, 10px) }
+    50% { transform: translate(50vw, 0px) }
+    55% { transform: translate(55vw, -10px) }
+    60% { transform: translate(60vw, 0px) }
+    80% { transform: translate(80vw, 0px) }
+    85% { transform: translate(85vw, 10px) }
+    90% { transform: translate(90vw, 0px) }
+    95% { transform: translate(95vw, -10px) }
+    100% { transform: translate(100vw, 0px) }
 }
 
 .modal ul li:nth-child(1){
