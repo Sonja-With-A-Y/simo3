@@ -1,40 +1,48 @@
-if document.cookie != true {
+const cookieVal = document.cookie
+    .split("; ")
+    .find((row) => row.startsWith("age_verified="))
+    ?.split("=")[1];
 
-const yesButton = document.querySelector("[data-close-modal]")
-const noButton = document.getElementById("no-btn")
-const modal = document.querySelector("[data-modal]")
 
-modal.showModal()
-const smokeyElements = document.querySelectorAll("li");
-const blurElements = document.querySelectorAll("body");
-const fadeElements = document.querySelectorAll("dialog");
+if (cookieVal == "true") {
+    console.log(cookieVal);
+} else {
 
-blurElements.forEach((elem) => {
-    elem.classList.add('blur');
-});
+    const yesButton = document.querySelector("[data-close-modal]")
+    const noButton = document.getElementById("no-btn")
+    const modal = document.querySelector("[data-modal]")
 
-yesButton.addEventListener("click", () => {
-
-    smokeyElements.forEach((elem) => {
-        elem.classList.add('smoke');
-    })
+    modal.showModal()
+    const smokeyElements = document.querySelectorAll("li");
+    const blurElements = document.querySelectorAll("body");
+    const fadeElements = document.querySelectorAll("dialog");
 
     blurElements.forEach((elem) => {
-        elem.classList.add('unblur');
-    })
+        elem.classList.add('blur');
+    });
 
-    fadeElements.forEach((elem) => {
-        elem.classList.add('fade');
-    })
+    yesButton.addEventListener("click", () => {
 
-    setTimeout(function() {
-        modal.close()
-    }, 2000);
+        smokeyElements.forEach((elem) => {
+            elem.classList.add('smoke');
+        })
 
-    document.cookie = 'age_verified=true; max-age=31536000'
-});
+        blurElements.forEach((elem) => {
+            elem.classList.add('unblur');
+        })
 
-noButton.addEventListener("click", () => {
+        fadeElements.forEach((elem) => {
+            elem.classList.add('fade');
+        })
 
-});
+        setTimeout(function() {
+            modal.close()
+        }, 2000);
+
+        document.cookie = 'age_verified=true; max-age=31536000'
+    });
+
+    noButton.addEventListener("click", () => {
+
+    });
 }
