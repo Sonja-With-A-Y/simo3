@@ -1,4 +1,4 @@
-if !document.cookie {
+if document.cookie != true {
 
 const yesButton = document.querySelector("[data-close-modal]")
 const noButton = document.getElementById("no-btn")
