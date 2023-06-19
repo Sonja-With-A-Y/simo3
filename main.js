@@ -1,3 +1,5 @@
+if !document.cookie {
+
 const yesButton = document.querySelector("[data-close-modal]")
 const noButton = document.getElementById("no-btn")
 const modal = document.querySelector("[data-modal]")
@@ -28,8 +30,11 @@ yesButton.addEventListener("click", () => {
     setTimeout(function() {
         modal.close()
     }, 2000);
+
+    document.cookie = 'age_verified=true; max-age=31536000'
 });
 
 noButton.addEventListener("click", () => {
 
 });
+}
