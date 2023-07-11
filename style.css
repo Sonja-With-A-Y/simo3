@@ -28,7 +28,7 @@ body {
 }
 
 .bat-1 {
-    top: 5vh;
+    top: 8vh;
     position: fixed;
     background-size: auto 100%;
     width: 120px;
@@ -44,7 +44,7 @@ body {
 }
 
 .bat-2 {
-    top: 10vh;
+    top: 13vh;
     position: fixed;
     background-size: auto 100%;
     width: 120px;
@@ -62,7 +62,7 @@ body {
 }
 
 .bat-3 {
-    top: 17vh;
+    top: 20vh;
     position: fixed;
     background-size: auto 100%;
     width: 120px;
