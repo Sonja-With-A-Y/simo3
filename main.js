@@ -3,6 +3,12 @@ const cookieVal = document.cookie
     .find((row) => row.startsWith("age_verified="))
     ?.split("=")[1];
 
+let moan = new Audio('./sounds/moan.mp3');
+const moanButton = document.getElementById("moan-btn")
+
+moanButton.addEventListener("click", () => {
+    moan.play();
+});
 
 if (cookieVal == "true") {
     console.log(cookieVal);
@@ -40,9 +46,5 @@ if (cookieVal == "true") {
         }, 2000);
 
         document.cookie = 'age_verified=true; max-age=31536000'
-    });
-
-    noButton.addEventListener("click", () => {
-
     });
 }
