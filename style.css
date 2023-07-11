@@ -9,6 +9,7 @@ body {
 .bat-container-1 {
     position: fixed;
     left: -10vw;
+    top: 10vw;
     animation: fly-path 10s linear 0s infinite forwards;
     z-index: 1;
 }
@@ -16,6 +17,7 @@ body {
 .bat-container-2 {
     position: fixed;
     left: -10vw;
+    top: 5vw;
     animation: fly-path 8s linear 0s infinite reverse;
     z-index: 1;
 }
@@ -23,6 +25,7 @@ body {
 .bat-container-3 {
     position: fixed;
     left: -10vw;
+    top: 20vw;
     animation: fly-path 5s linear 0s infinite forwards;
     z-index: 1;
 }
