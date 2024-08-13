@@ -376,9 +376,9 @@ a {
 }
 
 .button-3::before {
-    content: url(./images/reddit.svg);
+    content: url(./images/twitch5.svg);
     width: 2.2rem;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 .link-4 {

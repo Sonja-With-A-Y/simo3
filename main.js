@@ -3,7 +3,7 @@ const cookieVal = document.cookie
     .find((row) => row.startsWith("age_verified="))
     ?.split("=")[1];
 
-let moan = new Audio('./sounds/moan.mp3');
+let moan = new Audio('./sounds/giggle.mp3');
 const moanButton = document.getElementById("moan-btn")
 
 moanButton.addEventListener("click", () => {
