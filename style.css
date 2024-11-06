@@ -300,6 +300,7 @@ a {
     z-index: 0;
     height: 7vh;
     width: 100%;
+    font-size: 40px;
 }
 
 .button-1::before {
